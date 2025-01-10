@@ -77,12 +77,28 @@ jobs:
         rm -rf $1
         }
         
-        git_sparse_clone main https://github.com/kiddin9/kwrt-packages luci-app-ddns-go \
+        git_sparse_clone main https://github.com/kiddin9/kwrt-packages \
+        chinadns-ng \
+        cpufreq \
+        ddns-go \
+        luci-app-argon-config \
+        luci-app-cpufreq \
+        luci-app-ddns-go \
+        luci-app-diskman \
+        luci-app-dockerman \
+        luci-app-homeproxy \
+        luci-app-msd_lite \
+        luci-app-samba4 \
+        luci-app-socat \
+        luci-app-temp-status \
+        luci-app-upnp \
+        luci-app-vlmcsd \
+        luci-app-wizard \
+        luci-app-wolplus \
+        luci-app-zerotier \
+        msd_lite \
+        sing-box
         
-        
-        
-        
-
     #- name: Delete duplicated packages
     #  run: |
     #    shopt -s extglob
