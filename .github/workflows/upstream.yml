@@ -99,6 +99,8 @@ jobs:
         msd_lite \
         sing-box
         
+        # git_sparse_clone main https://github.com/sbwml/luci-app-alist alist luci-app-alist
+        
     #- name: Delete duplicated packages
     #  run: |
     #    shopt -s extglob
