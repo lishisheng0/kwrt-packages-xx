@@ -90,6 +90,7 @@ jobs:
         luci-app-homeproxy \
         luci-app-msd_lite \
         luci-app-samba4 \
+        autoshare-samba \
         luci-app-socat \
         luci-app-temp-status \
         luci-app-upnp \
@@ -99,7 +100,9 @@ jobs:
         luci-app-wolplus \
         luci-app-zerotier \
         msd_lite \
-        sing-box
+        sing-box \
+        luci-app-autotimeset \
+        luci-app-parentcontrol
         
         git_clone https://github.com/xiaorouji/openwrt-passwall && mvdir openwrt-passwall
         git_clone https://github.com/xiaorouji/openwrt-passwall-packages && mvdir openwrt-passwall-packages
