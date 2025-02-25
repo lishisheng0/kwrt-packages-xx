@@ -101,6 +101,9 @@ jobs:
         msd_lite \
         sing-box
         
+        git_sparse_clone openwrt-24.10 "https://github.com/immortalwrt/luci" applications protocols/luci-proto-minieap protocols/luci-proto-quectel themes/luci-theme-argon
+        sed -i 's/\(+luci-compat\)/\1 +luci-theme-argon/' luci-app-argon-config/Makefile
+        
         git_clone https://github.com/xiaorouji/openwrt-passwall && mvdir openwrt-passwall
         git_clone https://github.com/xiaorouji/openwrt-passwall-packages && mvdir openwrt-passwall-packages
         
