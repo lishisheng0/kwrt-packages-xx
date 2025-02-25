@@ -99,7 +99,8 @@ jobs:
         luci-app-wolplus \
         luci-app-zerotier \
         msd_lite \
-        sing-box
+        sing-box \
+        luci-app-passwall
         
         # git_sparse_clone main https://github.com/sbwml/luci-app-alist alist luci-app-alist
         
