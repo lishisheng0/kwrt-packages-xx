@@ -81,6 +81,7 @@ jobs:
         chinadns-ng \
         cpufreq \
         ddns-go \
+        luci-app-argon \
         luci-app-argon-config \
         luci-app-cpufreq \
         luci-app-ddns-go \
@@ -92,6 +93,7 @@ jobs:
         luci-app-socat \
         luci-app-temp-status \
         luci-app-upnp \
+        vlmcsd \
         luci-app-vlmcsd \
         luci-app-wizard \
         luci-app-wolplus \
