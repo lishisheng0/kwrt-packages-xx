@@ -81,7 +81,7 @@ jobs:
         chinadns-ng \
         cpufreq \
         ddns-go \
-        luci-app-argon \
+        luci-theme-argon \
         luci-app-argon-config \
         luci-app-cpufreq \
         luci-app-ddns-go \
