@@ -101,27 +101,8 @@ jobs:
         msd_lite \
         sing-box
         
-        git_sparse_clone main https://github.com/kiddin9/kwrt-packages \
-        luci-app-passwall \
-        dns2socks \
-        tcping \
-        ipt2socks \
-        geoview \
-        hysteria \
-        naiveproxy \
-        shadowsocks-libev-ss-local \
-        shadowsocks-libev-ss-redir \
-        shadowsocks-libev-ss-server \
-        shadowsocks-rust-sslocal \
-        shadowsocks-rust-ssserver \
-        shadowsocksr-libev-ssr-local \
-        shadowsocksr-libev-ssr-redir \
-        shadowsocksr-libev-ssr-server \
-        simple-obfs \
-        trojan-plus \
-        tuic-client \
-        v2ray-plugin \
-        xray-plugin
+        git_clone https://github.com/xiaorouji/openwrt-passwall && mvdir openwrt-passwall
+        git_clone https://github.com/xiaorouji/openwrt-passwall-packages && mvdir openwrt-passwall-packages
         
         
         
