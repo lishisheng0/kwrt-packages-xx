@@ -12,7 +12,7 @@ on:
       ssh:
         description: 'ssh'
         required: false
-        default: 'true'
+        default: 'false'
   repository_dispatch:
 
 jobs:
