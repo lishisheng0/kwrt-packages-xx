@@ -1,16 +1,4 @@
 #!/bin/sh
-[ ! -f "/usr/share/ucitrack/luci-app-passwall.json" ] && {
-    cat > /usr/share/ucitrack/luci-app-passwall.json << EEOF
-{
-    "config": "passwall",
-    "init": "passwall"
-}
-EEOF
-/etc/init.d/ucitrack reload
-}
-
-grep -q ip-api.com /usr/share/passwall/rules/proxy_host ||
-	sed -i '$a ip-api.com' /usr/share/passwall/rules/proxy_host
 
 uci -q batch <<-EOF >/dev/null
 	set dhcp.@dnsmasq[0].localuse=1
@@ -53,7 +41,6 @@ chmod +x /usr/share/passwall/*.sh
 [ "$(uci -q get passwall.@global_xray[0].sniffing)" == "1" ] && [ "$(uci -q get passwall.@global_xray[0].route_only)" != "1" ] && uci -q set passwall.@global_xray[0].sniffing_override_dest=1
 uci -q delete passwall.@global_xray[0].sniffing
 uci -q delete passwall.@global_xray[0].route_only
-[ "`which nft`" ] && uci -q set passwall.@global_forwarding[0].use_nft=1
 uci -q commit passwall
 
 rm -f /tmp/luci-indexcache
