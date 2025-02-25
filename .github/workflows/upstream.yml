@@ -99,8 +99,35 @@ jobs:
         luci-app-wolplus \
         luci-app-zerotier \
         msd_lite \
-        sing-box \
-        luci-app-passwall
+        sing-box
+        
+        git_sparse_clone main https://github.com/kiddin9/kwrt-packages \
+        luci-app-passwall \
+        dns2socks \
+        tcping \
+        ipt2socks \
+        geoview \
+        hysteria \
+        naiveproxy \
+        shadowsocks-libev-ss-local \
+        shadowsocks-libev-ss-redir \
+        shadowsocks-libev-ss-server \
+        shadowsocks-rust-sslocal \
+        shadowsocks-rust-ssserver \
+        shadowsocksr-libev-ssr-local \
+        shadowsocksr-libev-ssr-redir \
+        shadowsocksr-libev-ssr-server \
+        simple-obfs \
+        trojan-plus \
+        tuic-client \
+        v2ray-plugin \
+        xray-plugin
+        
+        
+        
+        
+        
+        
         
         # git_sparse_clone main https://github.com/sbwml/luci-app-alist alist luci-app-alist
         
