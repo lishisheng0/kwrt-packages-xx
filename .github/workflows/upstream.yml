@@ -107,7 +107,7 @@ jobs:
         git_clone https://github.com/xiaorouji/openwrt-passwall && mvdir openwrt-passwall
         git_clone https://github.com/xiaorouji/openwrt-passwall-packages && mvdir openwrt-passwall-packages
        
-         
+        git_sparse_clone main https://github.com/kiddin9/kwrt-packages luci-app-fullconenat fullconenat fullconenat-nft
         
         
         
